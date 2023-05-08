@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>main page</title>
+</head>
+	
+	<main>
+        
+        <body>
+
+            <form>
+                    <div class="grid-container">
+
+                        <script class="details">
+                            const urlParams = new URLSearchParams(window.location.search);
+                            const name = urlParams.get('name');
+                            const email = urlParams.get('email');
+                            const password = urlParams.get('password');
+
+                            document.write(`<p> Hi, ${name} </p>`);
+
+                        </script>
+
+                    </div>
+           </form>
+        
+        </body>
+
+    </main>
+
+<style>
+
+    body{
+        background-color: azure;
+    }
+
+</style>
